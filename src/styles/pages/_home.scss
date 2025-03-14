@@ -7,14 +7,17 @@
         @include center;
         border-radius: 25px;
         background: 
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.6)),
         url("./assets/img/background-home-page-kasa.jpg") center/cover no-repeat !important;
-        mix-blend-mode: darken;
+        box-shadow: 0px 4px 4px 0px #00000040;
+
     }
 
     h1 {
         color: #fff;
         font-size: 48px;
         font-weight: 700;
+        text-shadow: 0px 2px 3px #00000040;
+       -webkit-text-stroke: 1px black;
     }
 }

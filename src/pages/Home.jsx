@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
+import Footer from '../components/footer'
 
 const Home = () => {
   return (
@@ -8,6 +9,9 @@ const Home = () => {
         <div className="container-title">
           <h1>Chez vous, partout et ailleurs</h1>
         </div>
+
+        <div className="container-card"></div>
+        < Footer />
     </div>
   )
 }
