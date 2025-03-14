@@ -1,0 +1,12 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row ;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+}

@@ -3,9 +3,11 @@ import Navigation from '../components/Navigation'
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
         < Navigation />
-        <h1>Bonjour tout le monde !</h1>
+        <div className="container-title">
+          <h1>Chez vous, partout et ailleurs</h1>
+        </div>
     </div>
   )
 }

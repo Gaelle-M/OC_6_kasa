@@ -1,0 +1,20 @@
+.home {
+    
+    .container-title {
+        margin-top: 30px;
+        text-align: center;
+        height: 223px;
+        @include center;
+        border-radius: 25px;
+        background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("./assets/img/background-home-page-kasa.jpg") center/cover no-repeat !important;
+        mix-blend-mode: darken;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
