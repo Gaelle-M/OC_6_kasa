@@ -10,6 +10,7 @@
         linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.6)),
         url("./assets/img/background-home-page-kasa.jpg") center/cover no-repeat !important;
         box-shadow: 0px 4px 4px 0px #00000040;
+        margin: 0px 50px;
 
     }
 
@@ -19,5 +20,16 @@
         font-weight: 700;
         text-shadow: 0px 2px 3px #00000040;
        -webkit-text-stroke: 1px black;
+    }
+
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        background: #F6F6F6;
+        border-radius: 25px;
+        margin: 50px;
+        padding: 30px 0px;
     }
 }
