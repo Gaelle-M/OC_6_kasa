@@ -1,5 +1,8 @@
 @import "./styles/setting";
-@import "./styles/components/navigation";
-@import "./styles/pages/home";
-@import "./styles/components/footer";
-@import "./styles/components/card";
+@import "./components/Navigation/navigation";
+@import "./pages/Home/home";
+@import "./components/Footer/footer";
+@import "./components/Card/card";
+@import "./components/Banner/banner";
+@import "./components/Collapse/collapse";
+@import "./pages/About/about";

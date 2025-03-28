@@ -1,0 +1,28 @@
+.banner {
+    margin-top: 30px;
+    text-align: center;
+    height: 223px;
+    @include center;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin: 0px 50px;
+
+         @media (max-width: 425px) {
+            margin: 20px;
+           }
+
+            h1 {
+                color: #fff;
+                font-size: 48px;
+                font-weight: 700;
+                text-shadow: 0px 2px 3px #00000040;
+               -webkit-text-stroke: 1px black;
+        
+               @media (max-width: 425px) {
+                font-size: 30px;
+                text-align: left;
+                margin-left: 15px;
+               }
+         
+            }    
+}

@@ -20,6 +20,16 @@
           }
     }
 
+    .nav-link {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+      
+        &.active {
+          text-decoration: underline;
+        }
+      }
+
     @media screen and (max-width: 500px) {
         img {
             width: 45%;
