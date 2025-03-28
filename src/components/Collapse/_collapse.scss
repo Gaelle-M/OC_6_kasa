@@ -1,13 +1,24 @@
 .container-collapse {
    @include center;
    flex-direction: column;
-   margin: 20px 0px;
-  
+   margin: 20px 5%;
 
     .collapse {
         margin: 20px 0;
-        width: 1023px;
+        width: min(1023px, 90vw);
         height: 55px;
+
+        @media screen and (max-width: 425px) {
+          margin: 5px 5%;
+        }
+
+        &.open { 
+          margin-bottom: 100px;
+
+          @media screen and (max-width: 425px) {
+            margin-bottom: 130px;
+          }
+        }
     }
   
     .collapse-header {
@@ -21,6 +32,10 @@
       color: #fff;
       font-size: 24px;
       font-weight: 700;
+
+      @media screen and (max-width: 425px) {
+        font-size: 13px;
+      }
   
       img.arrow {
         transition: transform 0.3s ease;
@@ -36,5 +51,9 @@
     .collapse-content {
       padding: 15px;
       background: #F6F6F6;
-    }
+
+      @media screen and (max-width: 425px) {
+        font-size: 13px;
+      }
+    } 
   }
