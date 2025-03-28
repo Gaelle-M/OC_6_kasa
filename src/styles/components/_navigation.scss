@@ -1,13 +1,34 @@
 .navigation {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row ;
     margin: 30px 50px;
 
+    @media (max-width: 425px) {
+        margin: 20px;
+       }
+
     ul {
         display: flex;
         flex-direction: row;
         gap: 30px;
+
+        @media (max-width: 425px) {
+           gap: 10px;
+          }
+    }
+
+    @media screen and (max-width: 500px) {
+        img {
+            width: 45%;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        li {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
     }
 }
