@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
 import logementsData from './data/data.json';
 import About from './pages/About/About';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,8 @@ function App() {
       <Routes>
           <Route path="/" element={<Home logements={logementsData}/>} /> 
           <Route path="/about" element={<About />} />
+          <Route path="/notfound" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
       </Routes>
     <Footer />
     </>

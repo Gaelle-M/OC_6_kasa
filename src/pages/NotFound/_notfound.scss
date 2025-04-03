@@ -1,0 +1,24 @@
+.notfound {
+    @include center;
+    flex-direction: column;
+    margin: 0 0 100px;
+    gap: 80px;
+    
+
+    .text-404 {
+        font-size: 288px;
+        color: $redcolor;
+        font-weight: 700;
+    }
+
+    p {
+        color: $redcolor;
+        font-size: 36px;
+    }
+
+    .nav-link {
+        color: #000;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+}

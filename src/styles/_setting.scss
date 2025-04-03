@@ -1,10 +1,11 @@
 @font-face {
     font-family: "font1";
-    src: url(../assets/fonts/Montserrat-Regular.ttf);
+    src: url(./assets/font/Montserrat-Regular.ttf);
 }
 
 $font1: "font1", sans-serif;
 $redcolor: #FF6060;
+
 
 @mixin center {
     display: flex;
