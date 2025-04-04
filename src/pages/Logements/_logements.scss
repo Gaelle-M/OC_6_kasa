@@ -3,10 +3,11 @@
 
     .container-section1 {
         display: flex;
+        align-items: baseline;
         margin-top: 30px;
 
         .container-title {
-            width: 90%;
+            width: 80%;
 
             h1 {
                 font-size: 36px;
@@ -19,7 +20,7 @@
         }
 
         .container-host {
-            width: 10%;
+            width: 20%;
             @include center;
             gap: 10px;
 

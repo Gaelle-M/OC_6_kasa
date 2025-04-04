@@ -3,17 +3,30 @@
     flex-direction: column;
     margin: 0 0 100px;
     gap: 80px;
+
+    @media (max-width: 475px) {
+        gap: 50px;
+      }
     
 
     .text-404 {
         font-size: 288px;
         color: $redcolor;
         font-weight: 700;
+
+        @media (max-width: 475px) {
+             font-size: 100px;
+             margin-top: 50px;
+           }
     }
 
     p {
         color: $redcolor;
         font-size: 36px;
+
+        @media (max-width: 475px) {
+            text-align: center;
+          }
     }
 
     .nav-link {

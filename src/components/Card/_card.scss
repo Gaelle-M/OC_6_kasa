@@ -6,6 +6,10 @@
     overflow: hidden;
     position: relative;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -21,6 +25,10 @@
           rgba(0, 0, 0, 0.5) 100%
         );
       }
+
+      @media (max-width: 475px) {
+        margin-left: 15px;
+       }
 
 
     img {

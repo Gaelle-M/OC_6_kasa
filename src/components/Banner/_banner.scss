@@ -7,9 +7,10 @@
     box-shadow: 0px 4px 4px 0px #00000040;
     margin: 0px 50px;
 
-         @media (max-width: 425px) {
-            margin: 20px;
-           }
+    @media (max-width: 475px) {
+        margin: 0 20px;
+        height: 110px;
+       }
 
             h1 {
                 color: #fff;
@@ -17,8 +18,8 @@
                 font-weight: 700;
                 text-shadow: 0px 2px 3px #00000040;
         
-               @media (max-width: 425px) {
-                font-size: 30px;
+               @media (max-width: 475px) {
+                font-size: 24px;
                 text-align: left;
                 margin-left: 15px;
                }
