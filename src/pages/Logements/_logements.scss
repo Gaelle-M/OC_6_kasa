@@ -1,3 +1,78 @@
 .logements {
     margin: 0px 50px;
+
+    .container-section1 {
+        display: flex;
+        margin-top: 30px;
+
+        .container-title {
+            width: 90%;
+
+            h1 {
+                font-size: 36px;
+                color: $redcolor;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .container-host {
+            width: 10%;
+            @include center;
+            gap: 10px;
+
+            p {
+                text-align: end;
+                color: $redcolor;
+            }
+
+            img {
+                border-radius: 50%;
+                width: 65px;
+            }
+        }
+    }
+
+    .container-section2 {
+        margin-top: 30px;
+        display: flex;
+
+        .container-tags {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .container-stars {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+           
+        }
+    }
+
+    .container-collapse {
+        @include center;
+        flex-direction: row;
+        gap: 50px;
+        margin: 30px 0;
+
+        .collapse {
+            width: 50%;
+            height: 52px;
+
+            &.open { 
+                margin-bottom: 150px;
+            }
+
+            .collapse-header {
+                font-size: 18px;
+            }
+        }
+    }
 }
