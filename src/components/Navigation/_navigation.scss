@@ -6,7 +6,7 @@
     flex-direction: row ;
     margin: 30px 50px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
         margin: 20px;
        }
 
@@ -15,7 +15,7 @@
         flex-direction: row;
         gap: 30px;
 
-        @media (max-width: 425px) {
+        @media (max-width: 426px) {
            gap: 10px;
           }
     }
@@ -35,7 +35,7 @@
             width: 45%;
         }
     }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
         li {
             font-size: 12px;
             text-transform: uppercase;

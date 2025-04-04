@@ -41,9 +41,14 @@
         transition: transform 0.3s ease;
         width: 24px;
         height: 13px;
+
         &.open {
           transform: rotate(180deg);
-          
+        }
+
+        @media screen and (max-width: 426px) {
+           width: 16px;
+           height: 9px;
         }
       }
     }

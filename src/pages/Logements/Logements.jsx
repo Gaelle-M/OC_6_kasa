@@ -30,27 +30,30 @@ const Logements = () => {
     <div className="logements">
       <Carrousel pictures={logement.pictures} />
 
-    <div className="container-section1">
-      <div className="container-title">
-        <h1>{logement.title}</h1>
-        <p>{logement.location}</p>
-      </div>
-      <div className="container-host">
-        <p>{logement.host.name}</p>
-        <img src={logement.host.picture} alt={logement.host.name} />
-      </div>
+    <div className="container-left-and-right">
+      <div className="container-left">
+        <div className="container-title">
+          <h1>{logement.title}</h1>
+          <p>{logement.location}</p>
+
+          <div className="container-tags">
+           {logement.tags.map((tag, index) => (
+           <Tags key={index} name={tag} />
+         ))}
+          </div>
+       </div>
       </div>
 
-    <div className="container-section2">
-      <div className="container-tags">
-        {logement.tags.map((tag, index) => (
-          <Tags key={index} name={tag} />
-        ))}
-      </div>
+      <div className="container-right">
+        <div className="container-host">
+          <p>{logement.host.name}</p>
+          <img src={logement.host.picture} alt={logement.host.name} />
+        </div>
 
-      <div className="container-stars">
-      <Stars stars={parseInt(logement.rating)} />
-      </div>
+        <div className="container-stars">
+        <Stars stars={parseInt(logement.rating)} />
+        </div>
+     </div>
     </div>
 
       <div className="container-collapse">
