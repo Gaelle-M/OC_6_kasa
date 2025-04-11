@@ -1,30 +1,24 @@
 import React from "react";
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom"; 
-import logementsData from "../../data/data.json";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Collapse from '../../components/Collapse/Collapse';
 import Tags from "../../components/Tags/Tags";
 import Stars from "../../components/Stars/Stars";
 
-const Logements = () => {
+const Logements = ({ logements }) => {
   const { id } = useParams();
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
-  console.log("ID récupéré depuis l'URL:", id);
-
-  const logement = logementsData.find((logement) => logement.id === id);
-  console.log("Logement trouvé:", logement);
+  const logement = logements.find((logement) => logement.id === id);
 
   useEffect(() => {
     if (!logement) {
-      navigate("/*"); 
+      navigate("/*");
     }
   }, [logement, navigate]);
 
-  if (!logement) {
-    return null; 
-  }
+  if (!logement) return null;
 
   return (
     <div className="logements">

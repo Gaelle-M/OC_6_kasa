@@ -6,6 +6,11 @@
       height: 415px;
       border-radius: 25px;
       object-fit: cover;
+
+        @media  screen and (max-width: 769px) {
+        
+          height: 255px;
+        }
     }
   
     .prev, .next {
@@ -20,10 +25,24 @@
   
     .prev {
       left: 10px;
+
+      img {
+        @media  screen and (max-width: 769px) {
+          width: 11px;
+          height: 19px;
+        }
+      }
     }
   
     .next {
       right: 10px;
+
+      img {
+        @media  screen and (max-width: 769px) {
+          width: 11px;
+          height: 19px;
+        }
+      }
     }
   
     .pagination {
@@ -33,6 +52,10 @@
       transform: translateX(-50%);
       color: white;
       padding: 5px 10px;
+
+      @media screen and (max-width: 426px) {
+          display: none;
+      }
     }
   }
   

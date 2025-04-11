@@ -26,10 +26,22 @@
                 h1 {
                  font-size: 36px;
                  color: $redcolor;
+
+                 @media  screen and (max-width: 769px) {
+                  font-size: 18px;
+                  line-height: 25px;
+                }
                 }
 
                 p {
                  font-size: 18px;
+                 font-weight: 500;
+
+                 @media  screen and (max-width: 769px) {
+                  font-size: 14px;
+                  margin-top: 15px;
+                  
+                }
                 }
           }
 
@@ -85,7 +97,7 @@
                 width: 65px;
 
                 @media  screen and (max-width: 426px) {
-                    width: 32px;
+                    width: 40px;
                   }
             }
         }
@@ -104,21 +116,24 @@
     }
 
     .container-collapse {
-        @include center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
         flex-direction: row;
         gap: 50px;
         margin: 0;
 
-        @media screen and (max-width: 426px) {
+        @media screen and (max-width: 769px) {
             flex-direction: column;
+            @include center;
             gap: 0px;
         }
 
         .collapse {
             width: 50%;
-            height: 52px;
+    
 
-            @media screen and (max-width: 426px) {
+            @media screen and (max-width: 769px) {
                 width: 100%;
             }
 

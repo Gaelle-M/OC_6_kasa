@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import './App.scss'
-import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react';
+import './index.scss';
+import { Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home/Home";
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
