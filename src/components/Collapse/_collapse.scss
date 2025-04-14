@@ -8,15 +8,15 @@
         width: min(1023px, 90vw);
         height: 55px;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 769px) {
           margin: 5px 5%;
         }
 
         &.open { 
           margin-bottom: 100px;
 
-          @media screen and (max-width: 425px) {
-            margin-bottom: 130px;
+          @media screen and (max-width: 426px) {
+            margin-bottom: 150px;
           }
         }
     }
@@ -33,7 +33,7 @@
       font-size: 24px;
       font-weight: 700;
 
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 769px) {
         font-size: 13px;
       }
   
@@ -57,7 +57,7 @@
       padding: 15px;
       background: #F6F6F6;
 
-      @media screen and (max-width: 426px) {
+      @media screen and (max-width: 769px) {
         font-size: 14px;
       }
     } 
